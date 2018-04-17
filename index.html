@@ -1,26 +1,66 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheets/menu.css">
-    <link rel="stylesheet" href="stylesheet/header.css">
-    <link rel="stylesheet" href="stylesheet/homepage.css">
-    <!-- Jquery -->
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-
-    <title>Nickes</title>
-  </head>
-  <body>
-
-<nav class="navbar">
-<h1> Nickes AB </h1>
-  </nav>
-
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="Stylesheet" href="css/bootstrap.min.css">
+	<link rel="Stylesheet" href="stylesheets/header.css">
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<title>Nickes.com</title>
+</head>
+<body>
+	<div id="header">
+		<nav class="navbar navbar-expand-lg container-fluid">
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+   			<span class="navbar-toggler-icon"></span>
+  			</button>
+	  		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+	    		<ul class="navbar-nav">
+		      		<li class="nav-item dropdown">
+		        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          	Fotboll
+		        	</a>
+		        	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				      <a class="dropdown-item" href="#">Premier League</a>
+				      <a class="dropdown-item" href="#">La Liga</a>
+				      <a class="dropdown-item" href="#">Serie A</a>
+				      <a class="dropdown-item" href="#">Bundesliga</a>
+				      <a class="dropdown-item" href="#">Ligue 1</a>
+				      <a class="dropdown-item" href="#">Champions League</a>
+				    </div>
+				  	</li>
+	      			<li class="nav-item dropdown">
+	        			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          			Hockey
+	        			</a>
+	        			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	          				<a class="dropdown-item" href="#">NHL</a>
+	          				<a class="dropdown-item" href="#">KHL</a>
+	        			</div>
+	      			</li>
+	      			<li class="nav-item">
+	      				<a class="nav-link" href="#">Motorsport</a>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link" href="#">Övrig sport</a>
+	      			</li>
+	      			<li class="nav-item">
+	        			<a class="nav-link" href="#">Konsert & teater</a>
+	      			</li>
+    			</ul>
+  			</div>
+		</nav>
+		<div id="nickesAB">
+			<h1>Nickes AB</h1>
+		</div>
+		<img id="logo" src="image/nickes_logo.jpg" alt="Fotbollsresor">
+		<div id="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
 <div class="container-fluid">
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -56,15 +96,7 @@
 
   </div>
 </div>
-  
-
-
-<div class="jumbotron">
-  <h3> Boka event hos Nickes!</h3>
-</div>
-  
-
-     <script src="script/bootstrap.min.js"></script>
-    <script src="script/menu.js"></script>
-  </body>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/logic.js"></script>
+</body>
 </html>
