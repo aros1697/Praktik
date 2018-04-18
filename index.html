@@ -3,23 +3,24 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="Stylesheet" href="css/bootstrap.min.css">
-	<link rel="Stylesheet" href="stylesheets/header.css">
+	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 	<title>Nickes.com</title>
 </head>
+
 <body>
-	<div id="header">
-		<nav class="navbar navbar-expand-lg container-fluid">
-  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-   			<span class="navbar-toggler-icon"></span>
-  			</button>
+	<div class="header container-fluid">
+		<div class="logo-box">
+			<img src="image/nickes_logo.jpg" alt="Fotbollsresor">
+		</div>
+		<div class="site-title">
+			<h1>Nickes AB</h1>
+		</div>
+		<nav class="navbar navbar-expand-lg">
 	  		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 	    		<ul class="navbar-nav">
 		      		<li class="nav-item dropdown">
-		        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          	Fotboll
-		        	</a>
+		        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fotboll</a>
 		        	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 				      <a class="dropdown-item" href="#">Premier League</a>
 				      <a class="dropdown-item" href="#">La Liga</a>
@@ -30,9 +31,7 @@
 				    </div>
 				  	</li>
 	      			<li class="nav-item dropdown">
-	        			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          			Hockey
-	        			</a>
+	        			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hockey</a>
 	        			<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 	          				<a class="dropdown-item" href="#">NHL</a>
 	          				<a class="dropdown-item" href="#">KHL</a>
@@ -50,10 +49,6 @@
     			</ul>
   			</div>
 		</nav>
-		<div id="nickesAB">
-			<h1>Nickes AB</h1>
-		</div>
-		<img id="logo" src="image/nickes_logo.jpg" alt="Fotbollsresor">
 		<div id="hamburger">
 			<span></span>
 			<span></span>
@@ -61,41 +56,36 @@
 			<span></span>
 		</div>
 	</div>
-<div class="container-fluid">
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-    <li data-target="#myCarousel" data-slide-to="4"></li>
-  </ul>
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ul class="carousel-indicators">
+		    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#myCarousel" data-slide-to="1"></li>
+		    <li data-target="#myCarousel" data-slide-to="2"></li>
+		    <li data-target="#myCarousel" data-slide-to="3"></li>
+		    <li data-target="#myCarousel" data-slide-to="4"></li>
+		</ul>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="img-fluid rounded" id="carousel-image" src="image/music.jpg" alt="Concert">
-    </div>
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+		    <div class="carousel-item active">
+		    	<img class="img-fluid" id="carousel-image" src="image/music.jpg" alt="Concert">
+		    </div>
+		    <div class="carousel-item">
+		      	<img class="img-fluid" id="carousel-image" src="image/hockey.jpg" alt="hockey">
+		    </div>
+		    <div class="carousel-item">
+		      	<img class="img-fluid" id="carousel-image" src="image/formel.jpg" alt="Formel">
+		    </div>
+		    <div class="carousel-item">
+		      	<img class="img-fluid" id="carousel-image" src="image/fotboll.jpg" alt="Fotboll">
+		    </div>
+			<div class="carousel-item">
+  				<img class="img-fluid" id="carousel-image" src="image/basket.jpg" alt="basket">
+			</div>
+		</div>
+	</div>
 
-    <div class="carousel-item">
-      <img class="img-fluid rounded" id="carousel-image" src="image/hockey.jpg" alt="hockey">
-    </div>
-
-    <div class="carousel-item">
-      <img class="img-fluid rounded" id="carousel-image" src="image/formel.jpg" alt="Formel">
-    </div>
-
-        <div class="carousel-item">
-      <img class="img-fluid rounded" id="carousel-image" src="image/fotboll.jpg" alt="Fotboll">
-    </div>
-
-    <div class="carousel-item">
-      <img class="img-fluid rounded" id="carousel-image" src="image/basket.jpg" alt="basket">
-    </div>
-
-  </div>
-</div>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/logic.js"></script>
 </body>

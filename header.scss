@@ -2,43 +2,28 @@
 @import "mixins";
 @import "fonts";
 
-#header {
-	width: 100%;
-	border-style: hidden;
-	border-width: 1px;
-	padding: 55px;
+.header {
 	background-color: $header-footer-color;
+	padding: 15px;
 }
 
-#nickesAB {
-	font-weight: $bold;
-	font-family: $base-font-family;
+.site-title {
+	@include font-face(Raleway, fonts/Raleway-Bold, $bold, $header-title-size);
 	color: $header-font-color;
-	position: absolute;
-	top: 5%;
-	left: 29%;
-	@include ipad-size-title(768px);
-	@include desktop-size-title(1024px);
-}
-
-#logo {
-	left: 1%;
-	position: fixed;
-	top: 2%;
-	width: 80px;
-	height: 80px;
+	display: inline-block;
 }
 
 .navbar {
-	position: absolute;
-	@media screen and (max-width: 1200px) {
-		left: 40%;
+	display: inline-block;
+}
+
+.logo-box {
+	display: inline-block;
+
+	img	{
+		max-height: 80px;
+		width: auto;
 	}
-	@media screen and (max-width: 1024px) {
-		left: 35%;
-	}
-	left: 50%;
-	top: 8.2%;
 }
 
 .nav-link {
@@ -58,16 +43,12 @@
 	color: $logo-color;
 }
 
-
-
 #hamburger {
 	width: 30px;
 	height: 30px;
 	position: absolute;
 	top: 7%;
 	left: 86%;
-	@include ipad-size-hamburger(768px);
-	@include desktop-size-hamburger(1024px);
 	@include webkit-transform(0deg);
 	@include webkit-transition(.5s);
 	cursor: pointer;

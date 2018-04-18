@@ -1,10 +1,3 @@
-@mixin font-face($name, $src, $weight, $color){
-	font-family: $name;
-	src: $src;
-	font-weight: $weight;
-	color: $color;
-}
-
 @mixin webkit-transform ($deg){
 	-webkit-transform: rotate($deg);
   	-moz-transform: rotate($deg);
@@ -19,33 +12,32 @@
   	transition: $s ease-in-out;
 }
 
+@mixin font-face($name, $src, $weight, $size){
+	font-family: $name;
+	src: $src;
+	font-weight: $weight;
+	font-size: $size;
+}
+
 // ipad, desktop sizes
 
 @mixin ipad-size-title ($min-width) {
 	@media screen and (min-width: $min-width) {
-		left: 15%;
-		top: 4%;
 	}
 }
 
 @mixin desktop-size-title ($min-width) {
 	@media screen and (min-width: $min-width) {
-		left: 10%;
-		top: 5%;
 	}
 }
 
 
 @mixin ipad-size-hamburger ($min-width) {
 	@media screen and (min-width: $min-width) {
-		left: 90%;
-		top: 5%;
 	}
 }
 
 @mixin desktop-size-hamburger ($min-width) {
 	@media screen and (min-width: $min-width) {
-		left: 95%;
-		top: 8%;
 	}
 }
