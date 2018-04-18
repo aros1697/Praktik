@@ -1,0 +1,46 @@
+@import "colors";
+@import "fonts";
+@import "mixins";
+
+$easing: cubic-bezier(.6, .05, .28, .91);
+
+#box {
+    position: fixed;
+    z-index: 4;
+    overflow: auto;
+    top: 113px;
+    right: 0px;
+    width: 100%;
+    opacity: 0;
+    padding: 10px 0px;
+    height: 100%;
+    background-color: $logo-color;
+    color: #ffffff;
+    transition: all 350ms $easing;
+}
+
+#box.active {
+    left: 0px;
+    opacity: 1;
+}
+
+#items {
+    position: relative;
+    top: 0;
+    .item {
+        position: relative;
+        cursor: pointer;
+        @include font-face(Raleway, fonts/Raleway-Bold, $bold, $menu-font-size);
+        padding: 15px 30px;
+        transition: all 250ms;
+        &:hover {
+            padding: 15px 45px;
+            background-color: transparentize(#ffffff, .8);
+        }
+    }
+}
+
+#box {
+    will-change: transform, opacity;
+}
+
