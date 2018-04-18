@@ -1,0 +1,49 @@
+@import "colors";
+@import "mixins";
+@import "fonts";
+
+.searchbar-wrapper{
+  @include font-face(Raleway, fonts/Raleway-Bold, $bold, $header-title-size);
+  z-index: 10;
+}
+
+.search-form{
+  position: absolute;
+}
+
+img{
+	width: 100%;
+	max-height: 600px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 425px){
+	.carousel-wrapper {display: none;}
+}
+
+@media screen and (min-width: 426px){
+	.mobilefirst {display: none;}
+}
+
+.btn{
+	background-color: $background-color;
+	color: $logo-color;
+}
+
+.btn:hover{
+	background-color: $logo-color;
+	color: $background-color;
+}
+
+.form-control{
+	background-color: $background-color;
+}
+
+.form-control:focus{
+	background-color: $background-color;
+}
+
+
+.mobilefirst{
+  @include font-face(Raleway, fonts/Raleway-Bold, $bold, $header-title-size);
+  color: $logo-color;
+}
