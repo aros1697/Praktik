@@ -21,23 +21,8 @@
 
 // ipad, desktop sizes
 
-@mixin ipad-size-title ($min-width) {
+@mixin desktop-title-size ($min-width) {
 	@media screen and (min-width: $min-width) {
-	}
-}
-
-@mixin desktop-size-title ($min-width) {
-	@media screen and (min-width: $min-width) {
-	}
-}
-
-
-@mixin ipad-size-hamburger ($min-width) {
-	@media screen and (min-width: $min-width) {
-	}
-}
-
-@mixin desktop-size-hamburger ($min-width) {
-	@media screen and (min-width: $min-width) {
+		@include font-face(Raleway, fonts/Raleway-Bold, $bold, $header-desktop-title-size)
 	}
 }
