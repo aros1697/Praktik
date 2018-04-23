@@ -1,0 +1,43 @@
+@import "mixins";
+@import "fonts";
+@import "colors";
+
+.breadcrumb {
+	margin-top: 15px;
+}
+
+// Main css
+.page-content {
+	@include font-face(Raleway, fonts/Raleway-Regular, $regular, 16px);
+}
+
+.fotbollsresor {
+	font-size: 50px;
+	margin-bottom: 20px;
+ 	p {
+ 		font-size: 16px;
+ 		line-height: 25px;
+ 	}
+}
+
+.fotball-last-minute {
+	margin-top: 10px;
+}
+
+//Footer css
+
+.col-md-5 {
+	margin-bottom: 20px;
+	align: center;
+}
+
+.subscribe-wrapper {
+	align: center;
+	width: 400px;
+	font-size: 14px;
+}
+
+
+.form-control {
+	@include font-face(Raleway, fonts/Raleway-Regular, $regular, 16px);
+}
