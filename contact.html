@@ -76,7 +76,7 @@
 </div>
 
 <div class="container">
-  <h4 class="event-title">Kontakt</h4>
+  <h4 class="card-title">Kontakt</h4>
   <div class="row">
     <div class="col-md-6">
       <iframe width="100%" height="400px" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Fordonsv%C3%A4gen%2017+(Nickes)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
@@ -84,15 +84,15 @@
       </iframe>
     </div>
     <div class="col-md-6">
-      <h2>Om företaget</h2>
+      <h2 class="event-title">Om företaget</h2>
       <p>Nickes Resor startades 1997 av ägaren Niklas Hellberg. År 2001 ombildades Nickes Resor till aktiebolaget Nickes AB. Bolaget marknadsför sig som Nickes.Com
       <br><br>
-      NICKES.COM
-      Fordonsvägen 17
+      NICKES.COM<br>
+      Fordonsvägen 17<br>
       55302 Jönköping
       <br><br>
-      Telefon: 036 - 14 14 43
-      E-post: info@nickes.com 
+      Telefon: 036 - 14 14 43<br>
+      E-post: info@nickes.com<br>
       Org.nr och VAT-nr: SE556604123101
       <br><br>
       Öppettider 09:00-17:00 normala vardagar. Aftnar och röda dagar stängt.
@@ -100,32 +100,33 @@
       * Ring detta nummer endast om du har akuta problem under resan eller vid akuta problem efter kontorets öppettider.</p>
     </div>
   </div>
-    <div class="media-container-row">
-      <div class="card">
-      <div class="card-header" role="tab">
-        <a role="button" data-toggle="collapse" href="#partners" aria-expanded"true">
-          <h5 class="faq-text">Partners</h5>
-        </a>
-      </div>
-      <div id="partners" class="collapse">
-        <div class="p-2">
-          <p class="faq-small-text">Exempel på samarbetspartners (denna sida uppdateras en gång var 3:e månad):
-          Svenska Fans</p>
+  <div class="row questionnaire">
+    <div class="col-lg-8 mb-4">
+      <h3 class="event-title">Skicka ett meddelande</h3>
+      <form name="sentMessage" id="contactForm" novalidate>
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>Namn:</label>
+            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+            <p class="help-block"></p>
+          </div>
         </div>
-      </div>
-    </div>
-
-        <div class="card">
-      <div class="card-header" role="tab">
-        <a role="button" data-toggle="collapse" href="#medlemskap" aria-expanded"true">
-          <h5 class="faq-text">Medlemskap</h5>
-        </a>
-      </div>
-      <div id="medlemskap" class="collapse">
-        <div class="p-2">
-          <p class="faq-small-text">Rföretagen, bussbranchen, fra (Alla loggor)</p>
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>Email:</label>
+            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address.">
+          </div>
         </div>
-      </div>
+        <div class="control-group form-group">
+          <div class="controls">
+            <label>Fråga:</label>
+            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+          </div>
+        </div>
+        <div id="success"></div>
+        <!-- For success/fail messages -->
+        <button type="submit" class="btn btn-primary" id="sendMessageButton">Skicka!</button>
+      </form>
     </div>
   </div>
 </div>
@@ -173,7 +174,9 @@
             <!--/.Second column-->
             <!--Third column-->
             <div class="col-md-4">
-              <h5 class="text-uppercase">Kontakt</h5>
+              <a href="contact.html">
+                <h5 class="text-uppercase">Kontakt</h5>
+              </a>
               <p class="footer-text">Fordonsvägen 17, 55302 Jönköping</p>
               <p class="footer-text">info@nickes.com</p>
               <p class="footer-text">036 - 14 14 43</p>
