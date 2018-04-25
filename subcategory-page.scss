@@ -1,0 +1,9 @@
+@import "mixins";
+@import "fonts";
+@import "colors";
+
+.img-fluid {
+	width: 100%;
+  	min-height: 150px;
+  	max-height: 355px;
+ }

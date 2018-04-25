@@ -1,0 +1,11 @@
+@import "mixins";
+@import "fonts";
+@import "colors";
+
+.btn-center {
+	display: flex;
+	justify-content: center;
+	@media (min-width: 992px){
+		display: inline-block;
+	}
+}
