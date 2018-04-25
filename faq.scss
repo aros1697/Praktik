@@ -1,0 +1,21 @@
+@import "mixins";
+@import "fonts";
+@import "colors";
+
+.faq-text {
+	font-weight: $regular;
+	font-size: 16px;
+	color: $logo-color;
+}
+
+.faq-small-text {
+	font-weight: $regular;
+	font-size: 14px;
+}
+
+.faq-title {
+	font-weight: $regular;
+	font-size: 22px;
+	color: $logo-color;
+	margin-top: 10px;
+}
