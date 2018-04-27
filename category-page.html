@@ -64,69 +64,85 @@
   </div>
 </nav>
 <!-- End navbar -->
+<!-- Pic header -->
+<div class="container">
+  <img src="image/fotboll.jpg" class="img-fluid" alt="bundesliga">
+</div>
 
 <!-- Page Heading/Breadcrumbs -->
-<div class="container margin-top-1">
+<div class="container">
   <nav aria-lable="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-      <li class="breadcrumb-item active">Kontakt</li>
+      <li class="breadcrumb-item active">Fotbollsresor</li>
     </ol>
   </nav>
 </div>
-
+<!-- Fotbollsresor -->
 <div class="container">
-  <h4 class="card-title">Kontakt</h4>
   <div class="row">
-    <div class="col-md-6">
-      <iframe width="100%" height="400px" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Fordonsv%C3%A4gen%2017+(Nickes)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-        <a href="https://www.maps.ie/create-google-map/">Google Maps iframe generator</a>
-      </iframe>
+    <div class="col-md-12 mt-5">
+      <h4 class="event-title">Fotbollsresor</h4>
+      <p class="event-text">Vi erbjuder fotbollsresor till Europas största ligor. Våra heta fotbollsresor går till England, Spanien, Italien, Tyskland och Frankrike. Välj mellan ligorna nedan eller kolla våra sista-minuten resor.</p>
     </div>
-    <div class="col-md-6">
-      <h2 class="event-title">Nickes.com</h2>
-      Fordonsvägen 17<br>
-      55302 Jönköping
-      <br><br>
-      Telefon: 036 - 14 14 43<br>
-      E-post: info@nickes.com<br>
-      Org.nr och VAT-nr: SE556604123101
-      <br><br>
-      Öppettider 09:00-17:00 normala vardagar. Aftnar och röda dagar stängt.
-      Jourtelefon: +46-70-6929191
-      * Ring detta nummer endast om du har akuta problem under resan eller vid akuta problem efter kontorets öppettider.</p>
-    </div>
-  </div>
-  <div class="row margin-top-1">
-    <div class="col-lg-8 mb-4">
-      <h3 class="event-title">Skriv ett meddelande till oss</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
-        <div class="control-group form-group">
-          <div class="controls">
-            <label>Namn:</label>
-            <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name." tabindex="1">
-            <p class="help-block"></p>
-          </div>
-        </div>
-        <div class="control-group form-group">
-          <div class="controls">
-            <label>Email:</label>
-            <input type="email" class="form-control" id="email" required data-validation-required-message="Please enter your email address." tabindex="1">
-          </div>
-        </div>
-        <div class="control-group form-group">
-          <div class="controls">
-            <label>Fråga:</label>
-            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none" tabindex="1"></textarea>
-          </div>
-        </div>
-        <div id="success"></div>
-        <!-- For success/fail messages -->
-        <button type="submit" class="btn btn-primary" id="sendMessageButton" tabindex="1">Skicka meddelande!</button>
-      </form>
+    <div class="col-md-12 category-nav">
+      <a href="subcategory-page.html" class="btn btn-primary">Premier League</a>
+      <a href="#" class="btn btn-primary">La Liga</a>
+      <a href="#" class="btn btn-primary">Bundesliga</a>
+      <a href="#" class="btn btn-primary">Ligue 1</a>
+      <a href="#" class="btn btn-primary">Champions League</a>
     </div>
   </div>
 </div>
+<!-- Fotbollsresor sista minuten -->
+<div class="container mt-5 mb-5">
+  <div class="row">
+      <div class="col-12">
+          <div class="table-responsive">
+              <table class="table table-striped">
+                  <thead>
+                      <tr>
+                        <th scope="col">Match</th>
+                        <th scope="col">Datum</th>
+                        <th scope="col">Tid</th>
+                        <th scope="col" class="text-center">Arena</th>
+                        <th scope="col" class="text-right">Pris</th>
+                        <th></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>Match vs match</td>
+                        <td>4 Mars 2018</td>
+                        <td>14:00</td>
+                        <td class="text-center">FC Barcelona - Camp Nou</td>
+                        <td class="text-right">1240 kr</td>
+                        <td class="text-right"><a href="booking.html" class="btn btn-secondary">Boka</a> </td>
+                      </tr>
+                      <tr>
+                        <td>Match vs match</td>
+                        <td>4 Mars 2018</td>
+                        <td>14:00</td>
+                        <td class="text-center">FC Barcelona - Camp Nou</td>
+                        <td class="text-right">1240 kr</td>
+                        <td class="text-right"><a href="booking.html" class="btn btn-secondary">Boka</a> </td>
+                      </tr>
+                      <tr>
+                        <td>Match vs match</td>
+                        <td>4 Mars 2018</td>
+                        <td>14:00</td>
+                        <td class="text-center">FC Barcelona - Camp Nou</td>
+                        <td class="text-right">1240 kr</td>
+                        <td class="text-right"><a href="booking.html" class="btn btn-secondary">Boka</a> </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- /.container -->
+
 
 <!-- Footer -->
 <footer class="py-5 bg-light mt-5">
@@ -184,10 +200,12 @@
   </div>
 </footer>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="jquery/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/logic.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="jquery/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Javascript -->
+<script src="js/logic.js"></script>
 
 </body>
 </html>
